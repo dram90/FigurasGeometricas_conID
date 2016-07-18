@@ -30,10 +30,10 @@ public class Rectangulo extends FiguraGeometrica {
     public String toString()
     {
         return "Rectangulo{" +
-                "base" + base +
-                "altura" + altura +
-                "id=" + id +
-                '}';
+                "base=" + base +
+                ", altura=" + altura +
+                ", id=" + id +
+                '}'+System.lineSeparator();
     }
 
 }

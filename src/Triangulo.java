@@ -11,10 +11,9 @@ public class Triangulo extends FiguraGeometrica {
     private long id;
 
 
-    public Triangulo(double lado1, double lado2, double lado3, double base, double altura,long id ) {
+    public Triangulo(double lado1, double lado2, double base, double altura,long id ) {
         this.lado1 = lado1;
         this.lado2 = lado2;
-        this.lado3 = lado3;
         this.base = base;
         this.altura = altura;
         this.id= id;
@@ -31,7 +30,7 @@ public class Triangulo extends FiguraGeometrica {
 
     public double calculaPerimetro()
     {
-        return lado1+lado2+lado3;
+        return base+lado1+lado2;
     }
 
 
@@ -39,11 +38,10 @@ public class Triangulo extends FiguraGeometrica {
     {
         return "Triangulo{" +
                 "lado1=" + lado1 +
-                "lado2"+ lado2+
-                "lado3" + lado3+
-                "base" + base+
-                "altura" +altura+
-                "id=" + id +
-                '}';
+                ", lado2="+ lado2+
+                ", base=" + base+
+                ", altura=" +altura+
+                ", id=" + id +
+                '}'+System.lineSeparator();
     }
 }

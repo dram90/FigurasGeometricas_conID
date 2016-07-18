@@ -2,9 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Created by professor on 13/06/2016.
- */
+
 public class Circumferencia extends FiguraGeometrica {
 
     private double radio;
@@ -31,8 +29,8 @@ public class Circumferencia extends FiguraGeometrica {
     {
         return "Circumferencia{" +
             "radio=" + radio +
-            "id=" + id +
-            '}';
+            ", id=" + id +
+            '}'+System.lineSeparator();
     }
 
 

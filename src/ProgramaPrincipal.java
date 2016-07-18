@@ -3,9 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Created by professor on 14/06/2016.
- */
+
 public class ProgramaPrincipal {
     public static void main(String[] args) {
 
@@ -50,10 +48,9 @@ public class ProgramaPrincipal {
             double lado1 = sc.nextDouble();
             System.out.println("Introduce el lado2:");
             double lado2 = sc.nextDouble();
-            System.out.println("Introduce el lado3:");
-            double lado3 = sc.nextDouble();
 
-            Triangulo triangulo = new Triangulo (lado1,lado2,lado3, base,altura,i+(2*numero));
+
+            Triangulo triangulo = new Triangulo (lado1,lado2,base,altura,i+(2*numero));
             arrayList.add(triangulo);
         }
 
@@ -81,7 +78,7 @@ public class ProgramaPrincipal {
 
         }
 
-        System.out.println("El area maxima es: " +maxArea + "y pertenece a la figura " +figura);
+        System.out.println("El area maxima es: " +maxArea + " y pertenece a la figura " +figura);
 
     }
 }
